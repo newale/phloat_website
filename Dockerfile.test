@@ -24,7 +24,7 @@ RUN yarn install
 COPY . /usr/src/app
 
 # Environment variables
-ENV NODE_ENV test
+ENV CI true
 
 # Main command
 CMD [ "yarn", "test", "--all" ]
